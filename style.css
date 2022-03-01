@@ -1,0 +1,193 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* text-decoration: none; */
+  /* list-style: none; */
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+  height: 55px;
+  width: 100%;
+}
+label.logo{
+  color: #0B1F5B;
+  font-size: 2em;
+  line-height: 55px;
+  padding-left:10%;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 55px;
+  margin: 0 5px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black!important;
+  font-size: 16px;  
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+.member{
+  background-image: linear-gradient(to right, #3384C1 , #0B1F5B);
+  padding: 0px 35px;
+  margin-right:0px!important ;
+
+}
+.member a{
+  color: white !important;
+}
+.checkbtn{
+  font-size: 24px;
+  color: #0B1F5B;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.cont-padd{
+  margin-top: 11px;
+}
+.cont-padding{
+  margin-top: 25px;
+}
+/* Header Meda Query */
+@media (max-width: 952px){
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    font-size: 30px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0B1F5B;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    color: white !important;
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+/* Admin Title */
+.admin-title{
+  margin-top: 20px;
+  margin-left: 10%;
+  width: 80%;
+}
+.admin-title h2, p{
+  color: #0B1F5B;
+  margin-bottom: 10px;
+}
+
+/* Login Form CSS */
+.login-form{
+  width: 500px;
+  margin: 2px auto;
+  padding: 5px;
+}
+
+.login-form p{
+  text-align: center;
+  color: #0B1F5B;
+}
+.login-form .login_input{
+  border: 1px solid #CCCCCC;
+}
+
+.login-form .forgot{
+  margin-top: 40px;
+}
+
+.login-form button{
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color:#3281BE;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 140px;
+  margin-bottom: 15px;
+}
+
+.login-form input{
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 15px;
+  box-shadow: 2px 2px 3px lightgray;
+}
+/* Media Query Login Form */
+@media (max-width: 858px){
+  .login-form {
+    width: 78%;
+  }
+  .login-form button{
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+/* Contact Section */
+.contact-section{
+  margin: 0 auto;
+  text-align: center;
+  background-color: #0B1F5B;
+  color: white;
+  padding: 5%;
+}
+.contact .support{
+  font-size: 1.5em;
+  color: white;
+}
+.contact p{
+  color: white;
+  font-size: 0.8em;
+  margin-top: 16px;
+}
+.contact h1{
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+.contact-section button{
+  width: 220px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
